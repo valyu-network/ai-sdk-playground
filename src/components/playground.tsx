@@ -117,7 +117,7 @@ export function Playground() {
 
   const [tool, setTool] = useState(searchParams.get("tool") || "webSearch");
   const [model, setModel] = useState(
-    searchParams.get("model") || "google/gemini-3-pro-preview"
+    searchParams.get("model") || "openai/gpt-oss-120b"
   );
   const [modelSelectorOpen, setModelSelectorOpen] = useState(false);
   const [prompt, setPrompt] = useState(searchParams.get("prompt") || "");
