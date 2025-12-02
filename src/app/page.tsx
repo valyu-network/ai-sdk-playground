@@ -29,7 +29,7 @@ function PlaygroundPage() {
               alt="Valyu"
               width={100}
               height={32}
-              className="h-8 w-auto"
+              className="h-8 w-auto dark:invert"
               priority
             />
           </motion.a>

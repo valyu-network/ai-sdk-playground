@@ -50,7 +50,7 @@ export function ToolCallDisplay({
                 alt="Valyu"
                 width={24}
                 height={24}
-                className="object-contain"
+                className="object-contain dark:invert"
               />
             </div>
             {isLoading && (
