@@ -74,11 +74,11 @@ const TOOLS = [
     name: "Economics Search",
     samplePrompt: "What is CPI vs unemployment since 2020 in the US?",
   },
-  // {
-  //   id: "companyResearch",
-  //   name: "Company Research",
-  //   samplePrompt: "Research the company nia AI",
-  // },
+  {
+    id: "companyResearch",
+    name: "Company Research",
+    samplePrompt: "Research the company Holistic AI",
+  },
 ];
 
 // Models organized by provider for the selector
@@ -96,6 +96,9 @@ const MODELS_BY_PROVIDER = {
   xai: [
     { id: "xai/grok-4", name: "Grok 4" },
   ],
+  amazon: [
+    { id: "amazon/nova-pro", name: "Nova Pro" },
+  ],
 } as const;
 
 // Flat list for easy lookup
@@ -108,6 +111,7 @@ const PROVIDER_NAMES: Record<string, string> = {
   openai: "OpenAI",
   anthropic: "Anthropic",
   xai: "xAI",
+  amazon: "Amazon",
 };
 
 export function Playground() {
