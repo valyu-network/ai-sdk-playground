@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Valyu AI SDK Playground",
     images: [
       {
-        url: "/valyu-meta.png",
+        url: "/valyu-aisdk.png",
         width: 1200,
         height: 630,
         alt: "Valyu AI SDK Playground",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Valyu AI SDK Playground",
     description: "AI SDK Playground for @valyu/ai-sdk tools",
-    images: ["/valyu-meta.png"],
+    images: ["/valyu-aisdk.png"],
   },
 };
 
