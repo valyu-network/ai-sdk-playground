@@ -74,11 +74,11 @@ const TOOLS = [
     name: "Economics Search",
     samplePrompt: "What is CPI vs unemployment since 2020 in the US?",
   },
-  {
-    id: "companyResearch",
-    name: "Company Research",
-    samplePrompt: "Research the company Holistic AI",
-  },
+  // {
+  //   id: "companyResearch",
+  //   name: "Company Research",
+  //   samplePrompt: "Research the company Holistic AI",
+  // },
 ];
 
 // Models organized by provider for the selector
