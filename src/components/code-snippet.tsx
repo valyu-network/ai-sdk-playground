@@ -83,7 +83,7 @@ console.log(text);`
     <Card className="relative overflow-hidden !py-0 !gap-0">
       <div className="flex items-center justify-between px-4 py-2 border-b bg-muted/50">
         <span className="text-sm font-medium text-muted-foreground">
-          Backend Code
+          Backend Code (yes, it is this easy!)
         </span>
         <Button
           variant="ghost"
