@@ -9,10 +9,11 @@ pnpm install
 pnpm dev
 ```
 
-Add your API key to `.env.local`:
+Add your API keys to `.env.local`:
 
 ```
 VALYU_API_KEY=your-api-key
+AI_GATEWAY_API_KEY=your-vercel-ai-gateway-key
 ```
 
 ## Features
