@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useId, useMemo } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Play, Loader2, ChevronDown } from "lucide-react";
+import { Loader2, ChevronDown } from "lucide-react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
 import { Button } from "@/components/ui/button";
@@ -413,8 +413,15 @@ export function Playground() {
                   </>
                 ) : (
                   <>
-                    <Play className="mr-2 h-4 w-4" />
                     Run with {selectedModel?.name || "AI"}
+                    <span className="ml-2 hidden sm:inline-flex items-center gap-0.5 text-xs opacity-70">
+                      <span className="flex items-center justify-center w-5 h-5 font-semibold border rounded bg-primary-foreground/10">
+                        ⌘
+                      </span>
+                      <span className="flex items-center justify-center w-5 h-5 font-semibold border rounded bg-primary-foreground/10">
+                        ↵
+                      </span>
+                    </span>
                   </>
                 )}
               </Button>

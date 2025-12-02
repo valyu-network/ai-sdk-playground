@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useMemo, createContext, useContext, ReactNode } from "react";
 import { Streamdown } from "streamdown";
 import {
@@ -62,13 +61,13 @@ function CitationBadge({ citation }: { citation: Citation }) {
             variant="secondary"
           >
             {faviconUrl && (
-              <Image
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 src={faviconUrl}
                 alt=""
                 width={12}
                 height={12}
                 className="rounded-sm"
-                unoptimized
               />
             )}
             <span>{hostname}</span>
@@ -78,14 +77,16 @@ function CitationBadge({ citation }: { citation: Citation }) {
           <InlineCitationCarousel>
             <InlineCitationCarouselHeader>
               <div className="flex items-center gap-2">
-                <Image
-                  src={faviconUrl}
-                  alt=""
-                  width={16}
-                  height={16}
-                  className="rounded-sm"
-                  unoptimized
-                />
+                {faviconUrl && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={faviconUrl}
+                    alt=""
+                    width={16}
+                    height={16}
+                    className="rounded-sm"
+                  />
+                )}
                 <span className="text-xs font-medium truncate max-w-[200px]">
                   {citation.title}
                 </span>
