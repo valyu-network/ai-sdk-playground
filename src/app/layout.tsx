@@ -16,18 +16,27 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Valyu AI SDK Playground",
-  description: "Test Valyu search tools with Vercel AI SDK v5",
+  description: "AI SDK Playground for @valyu/ai-sdk tools",
   metadataBase: new URL("https://ai-sdk.valyu.ai"),
   openGraph: {
     title: "Valyu AI SDK Playground",
-    description: "Test Valyu search tools with Vercel AI SDK v5",
+    description: "AI SDK Playground for @valyu/ai-sdk tools",
     url: "https://ai-sdk.valyu.ai",
     siteName: "Valyu AI SDK Playground",
+    images: [
+      {
+        url: "/valyu-meta.png",
+        width: 1200,
+        height: 630,
+        alt: "Valyu AI SDK Playground",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Valyu AI SDK Playground",
-    description: "Test Valyu search tools with Vercel AI SDK v5",
+    description: "AI SDK Playground for @valyu/ai-sdk tools",
+    images: ["/valyu-meta.png"],
   },
 };
 
