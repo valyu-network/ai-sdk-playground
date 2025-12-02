@@ -46,7 +46,7 @@ export function CodeSnippet({
 
   const toolConfig = tool === "companyResearch"
     ? ""
-    : maxNumResults !== 10
+    : maxNumResults !== 3
       ? `{ maxNumResults: ${maxNumResults} }`
       : "";
 

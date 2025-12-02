@@ -122,7 +122,7 @@ export function Playground() {
   const [modelSelectorOpen, setModelSelectorOpen] = useState(false);
   const [prompt, setPrompt] = useState(searchParams.get("prompt") || "");
   const [maxNumResults, setMaxNumResults] = useState(
-    Number(searchParams.get("maxResults")) || 10
+    Number(searchParams.get("maxResults")) || 3
   );
   const [mode, setMode] = useState<"streaming" | "generate">(
     (searchParams.get("mode") as "streaming" | "generate") || "streaming"
@@ -249,7 +249,16 @@ export function Playground() {
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold mb-2">Valyu AI SDK Playground</h1>
             <p className="text-muted-foreground">
-              Test @valyu/ai-sdk tools with AI SDK v5
+              Test{" "}
+              <a
+                href="https://www.npmjs.com/package/@valyu/ai-sdk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground"
+              >
+                @valyu/ai-sdk
+              </a>{" "}
+              tools with AI SDK v5
             </p>
           </div>
 

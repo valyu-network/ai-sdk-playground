@@ -41,7 +41,7 @@ const today = new Date().toLocaleDateString("en-US", {
 const SYSTEM_PROMPT = `Today is ${today}. Answer using search results. Place citations immediately after each statement like "fact [1]" or "claim [2][3]", not grouped at the end. Citation numbers correspond to search result order. Write in well formatted MD.`;
 
 export async function POST(request: Request) {
-  const { messages, tool, model, maxNumResults, mode } = await request.json();
+  const { messages, tool, model, maxNumResults = 3, mode } = await request.json();
 
   const toolName = tool as ToolName;
   const toolFn = TOOLS_MAP[toolName];
