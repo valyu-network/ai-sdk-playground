@@ -239,15 +239,15 @@ export function Playground() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Main content */}
-      <div className="flex-1 container mx-auto px-4 py-8 max-w-4xl">
+      <div className="flex-1 container mx-auto px-3 sm:px-4 py-4 sm:py-8 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           {/* Title */}
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold mb-2">Valyu AI SDK Playground</h1>
+          <div className="text-center mb-6 sm:mb-8">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-2">Valyu AI SDK Playground</h1>
             <p className="text-muted-foreground">
               Test{" "}
               <a
@@ -263,8 +263,8 @@ export function Playground() {
           </div>
 
           {/* Configuration */}
-          <Card className="p-6 mb-6">
-            <div className="grid gap-6">
+          <Card className="p-4 sm:p-6 mb-4 sm:mb-6">
+            <div className="grid gap-4 sm:gap-6">
               {/* Tool & Model Row */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -423,7 +423,7 @@ export function Playground() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <Card className="p-6 mb-6">
+              <Card className="p-4 sm:p-6 mb-4 sm:mb-6">
                 <h3 className="font-semibold mb-3">Response</h3>
                 <div className="space-y-4">
                   {(() => {
@@ -505,7 +505,7 @@ export function Playground() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
             >
-              <Card className="p-6 mb-6">
+              <Card className="p-4 sm:p-6 mb-4 sm:mb-6">
                 <h3 className="font-semibold mb-3">Response</h3>
                 <CitedText
                   text={generateResult}

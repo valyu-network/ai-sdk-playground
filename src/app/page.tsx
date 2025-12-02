@@ -13,7 +13,7 @@ function PlaygroundPage() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto px-4 h-14 flex items-center justify-between">
+        <div className="container mx-auto px-3 sm:px-4 h-14 flex items-center justify-between">
           {/* Logo - Left */}
           <motion.a
             href="https://valyu.ai"
@@ -29,7 +29,7 @@ function PlaygroundPage() {
               alt="Valyu"
               width={100}
               height={32}
-              className="h-8 w-auto dark:invert"
+              className="h-6 sm:h-8 w-auto dark:invert"
               priority
             />
           </motion.a>

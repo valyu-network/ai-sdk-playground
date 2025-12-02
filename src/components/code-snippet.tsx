@@ -99,7 +99,7 @@ console.log(text);`
           <span className="ml-2">{copied ? "Copied!" : "Copy"}</span>
         </Button>
       </div>
-      <pre className="p-4 overflow-x-auto text-sm font-mono bg-card">
+      <pre className="p-3 sm:p-4 overflow-x-auto text-xs sm:text-sm font-mono bg-card">
         <code className="text-foreground">{code}</code>
       </pre>
     </Card>
