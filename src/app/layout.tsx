@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "Valyu AI SDK Playground",
   description: "AI SDK Playground for @valyu/ai-sdk tools",
   metadataBase: new URL("https://ai-sdk.valyu.ai"),
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "Valyu AI SDK Playground",
     description: "AI SDK Playground for @valyu/ai-sdk tools",
