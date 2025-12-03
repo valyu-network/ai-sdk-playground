@@ -334,7 +334,7 @@ export function Playground() {
 
   const [tool, setTool] = useState(searchParams.get("tool") || "webSearch");
   const [model, setModel] = useState(
-    searchParams.get("model") || "openai/gpt-oss-120b"
+    searchParams.get("model") || "openai/gpt-5.1-instant"
   );
   const [modelSelectorOpen, setModelSelectorOpen] = useState(false);
   const [prompt, setPrompt] = useState(searchParams.get("prompt") || "");
